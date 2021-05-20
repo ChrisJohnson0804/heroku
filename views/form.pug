@@ -1,0 +1,11 @@
+extends layout 
+
+block content
+    form(method="POST" action="/new")
+        h1 Post a comment!
+        label(for="inputName") Name
+        input(type="name", name="name", id="inputName")
+        label(for="inputComment") Comment 
+        input(type="text", name="text", id="inputComment")
+        button(type="submit" name="submitButton" id="submitButton") Submit
+
